@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic Tac Toe</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        .scale-110 {
+            transform: scale(1.1);
+        }
+    </style>
+</head>
+<body class="flex items-center justify-center h-screen bg-gray-100">
+    <div class="text-center">
+        <h1 class="text-4xl font-bold mb-4">Tic Tac Toe</h1>
+        
+        <div id="symbol-selection" class="mb-4">
+            <span class="text-xl">Pilih simbol:</span>
+            <button id="selectX" class="bg-blue-500 text-white px-4 py-2 rounded mx-2">X</button>
+            <button id="selectO" class="bg-red-500 text-white px-4 py-2 rounded mx-2">O</button>
+        </div>
+
+        <div class="mb-4">
+            <span class="text-xl">Pemain X: <span id="scoreX">0</span></span>
+            <span class="text-xl ml-4">Pemain O: <span id="scoreO">0</span></span>
+        </div>
+
+        <div id="board" class="grid grid-cols-3 gap-4 mb-4" style="display: none;">
+            <!-- Kotak permainan akan diisi dengan JavaScript -->
+        </div>
+
+        <button id="restart" class="mt-4 bg-blue-500 text-white px-4 py-2 rounded" style="display: none;">Restart</button>
+        <div id="status" class="mt-4 text-xl"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
